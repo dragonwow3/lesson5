@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name = "description" content="описание о чем веб страничка до 256 символов">
+	<meta name = "keywords" content="web,design,html5,sites,coding">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Document</title>
+	<style>
+
+	@media screen and (max-width: 320px){   /*максимальная ширина экрана гаджета - до 320*/
+	#navlist li
+{
+display: inline;
+list-style-type: none;
+padding-right: 20px;
+}
+		
+	}
+	@media screen and (min-width: 321px) and (max-width: 768px) {  /*ширина от 321 до 768*/
+	
+		ul#navlist
+{
+margin-left: 0;
+padding-left: 0;
+white-space: nowrap;
+}
+#navlist li
+{
+display: inline;
+list-style-type: none;
+}
+#navlist a { padding: 3px 10px; }
+#navlist a:link, #navlist a:visited
+{
+color: #fff;
+background-color: #036;
+text-decoration: none;
+}
+#navlist a:hover
+{
+color: #fff;
+background-color: #369;
+text-decoration: none;
+}
+		
+	}
+	@media screen and (min-width: 769px) and (max-width: 960px)  {
+	
+		#navlist
+{
+margin: 0;
+padding: 0 0 20px 10px;
+border-bottom: 1px solid #000;
+}
+#navlist ul, #navlist li
+{
+margin: 0;
+padding: 0;
+display: inline;
+list-style-type: none;
+}
+#navlist a:link, #navlist a:visited
+{
+float: left;
+line-height: 14px;
+font-weight: bold;
+margin: 0 10px 4px 10px;
+text-decoration: none;
+color: #999;
+}
+#navlist a:link#current, #navlist a:visited#current, #navlist a:hover
+{
+border-bottom: 4px solid #000;
+padding-bottom: 2px;
+background: transparent;
+color: #000;
+}
+#navlista:hover { color: #000; }
+	}
+	@media screen and (min-width: 961px) { /*ширина более 960*/
+		#navlist ul
+{
+margin: 0;
+white-space: nowrap;
+padding: 0;
+}
+#navlist li
+{
+display: inline;
+list-style-type: none;
+}
+#navlist a
+{
+padding: 1px 8px 1px 24px;
+border: 1px solid #333;
+background-color: #999;
+background-image: url(images/l1_down.gif);
+}
+#navlist a:link, #navlist a:visited
+{
+	color: #EEE;
+text-decoration: none;
+}
+#navlist a:hover
+{
+border: 1px solid #333;
+background-color: #FF6600;
+background-image: url(images/l1_over.gif);
+color: #333;
+}
+#active a:link, #active a:visited, #active a:hover
+{
+border: 1px solid #333;
+background-color: #FF6600;
+background-image: url(images/l1_over.gif);
+color:
+	}	
+	</style>
+</head>
+<body>
+	<div id="navcontainer">
+<ul id="navlist">
+<li id="active"><a href="#" id="current">Item one</a></li>
+<li><a href="#">Item two</a></li>
+<li><a href="#">Item three</a></li>
+<li><a href="#">Item four</a></li>
+<li><a href="#">Item five</a></li>
+</ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name = "description" content="описание о чем веб страничка до 256 символов">
+	<meta name = "keywords" content="web,design,html5,sites,coding">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Document</title>
+	<style>
+		
+	ul.menu{
+		list-style-type: none;
+	}
+	ul.menu li{
+	float:left;
+	}
+
+	ul.menu li a{
+		text-decoration: none;
+		margin: 0 2px;
+		padding: 5px 15px;
+		border: 1px solid #000;
+		text-align: center;
+		border-bottom: solid 6px black;
+	}
+
+	ul.menu li a.current{
+		background-color: black;
+		color: white;
+	}
+		ul.menu li a:hover{
+	color: black;
+	border-bottom: 6px solid red;
+	}
+	</style>
+</head>
+<body>
+	<!-- nav>ul.menu>li*8>a{menu$} -->
+	<nav>
+		<ul class="menu">
+			<li><a class="current" href="">menu1</a></li>
+			<li><a href="">menu2</a></li>
+			<li><a href="">menu3</a></li>
+			<li><a href="">menu4</a></li>
+			<li><a href="">menu5</a></li>
+			<li><a href="">menu6</a></li>
+			<li><a href="">menu7</a></li>
+			<li><a href="">menu8</a></li>
+		</ul>
+	</nav>
+</body>
+</html>
